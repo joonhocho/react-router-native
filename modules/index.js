@@ -22,8 +22,9 @@ import RouterContext from './RouterContext';
 import createNativeContext from './createNativeContext';
 import Reducer from './Reducer';
 import { render } from './render';
+import applyRouterMiddleware from './applyRouterMiddleware';
 
-export { RouterContext, createNativeContext, Reducer, render };
+export { RouterContext, createNativeContext, Reducer, render, applyRouterMiddleware };
 
 /* histories */
 import nativeHistory from './nativeHistory';
