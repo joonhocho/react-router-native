@@ -65,6 +65,7 @@
   "dependencies": {
     "history": "^2.0.1",
     "invariant": "^2.2.1",
+    "react-addons-shallow-compare": "^15.1.0",
     "warning": "^2.1.0"
   },
   "devDependencies": {

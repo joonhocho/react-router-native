@@ -23,6 +23,8 @@ import type {
   NavigationAction,
   PseudoElement,
 } from './TypeDefinition';
+import shallowCompare from 'react-addons-shallow-compare';
+
 
 type Props = {
   allRoutes: Array<RouteDef>,
@@ -245,6 +247,10 @@ class RouterContext extends Component<any, any, any> {
       navigationState,
       navigationTree,
     });
+  }
+
+  shouldComponentUpdate(nextProps, nextState): boolean {
+    return shallowCompare(this, nextProps, nextState);
   }
 
   shouldRedirectToActiveRoute(
